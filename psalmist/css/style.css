@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Lato;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height:4em;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+nav p{
+    color: white;
+    display: none;
+}
+
+nav div.name{
+    text-align: center;
+    color: white;
+}
+
+nav div.list ul li{
+    display: inline;
+    padding: 0 1.1em;
+    font-size: 18px;
+}
+
+nav div.list ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav div.cont .cta-1{
+    background-color: red;
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.hero-section{
+    position: relative;
+    top: 4em;
+    background-color: black;
+    color: white;
+}
+section.hero-section div.hero{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 6em;
+}
+
+section.hero-section div.hero div.article{
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 8px;
+}
+section.hero-section div.hero div.article h2{
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+
+section.hero-section div.hero div.article h3{
+    font-size: 1.7em;
+    margin-bottom: 5px;
+}
+section.hero-section div.hero div.article span{
+    font-style: italic;
+    font-size: 1.5em;
+}
+section.hero-section div.hero div.one{
+    min-width: 40%;
+}
+
+section.hero-section div.hero div.one img{
+    max-width: 100%;
+    border-bottom-left-radius: 8em;
+    border-bottom-right-radius: 8em;
+}
+
+section.main-1 h1{
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em 0px;
+}
+section.main-1 div.product{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 3em;
+}
+
+section.main-1 div.product div.product-1 p{
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 1.5em;
+    font-size: 18px;
+}
+
+section.main-1 div.product div.product-1 a{
+    text-decoration: none;
+    color: grey;
+    border-bottom: 2px solid blue;
+}
+
+section.main-1 div.product-2{
+    width: 80%;
+    margin: 2em auto 0;
+    
+}
+section.main-1 div.product-2 div.align{
+    display: flex;
+    gap: 2em;  
+    margin-bottom: 2em; 
+}
+
+section.main-1 div.product-2 div.align h2{
+    font-size: 1.5em;
+}
+
+section.main-1 div.two{
+    width: 80%;
+    margin: auto;
+}
+
+section.main-1 div.two img{
+    width: 90%;
+    height: 50vh;
+    margin-left: 30px;
+}
+
+section.main-1 div.small-pro{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 2em; */
+}
+
+section.main-1 div.small-pro div.project{
+    width: 80%;
+    margin: 2em auto 2em;
+}
+
+section.main-1 div.small-pro div.project img{
+    width: 30vw;
+}
+
+section.awesome{
+    width: 80%;
+    margin: auto;
+}
+
+section.awesome div.three{
+    display: flex;
+}
+
+section.awesome div.three div.article{
+    width: 30%;
+}
+section.awesome div.three div.article h2,
+section.awesome div.three div.article h1{
+    text-align: left;
+}
+section.awesome div.words{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 16px;
+    text-align: justify;
+}
+
+section.awesome div.three div.article h1{
+    font-size: 22px;
+    margin-top: 1em;
+}
+
+section.awesome div.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+section.awesome div.boxes div.box{
+    width: 80%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+section.awesome div.boxes div.box:hover{
+    background-color: rgb(54, 44, 44);
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+section.footer{
+    width: 100%;
+    color: white;
+    background-color: black;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 50vh;
+}
+section.footer div.footer-1{
+    margin-top: 2em;
+    width: 80%;
+    text-align: center;
+}
+
+section.footer div.footer-1 h1{
+    margin-bottom: 0.8em;
+}
+
+section.footer div.footer-1 p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+section.footer div.footer-1 input[type="email"] {
+    width: 30em;
+    padding: 12px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+section.footer div.footer-1 .cta-2 {
+    background-color: red;
+    padding: 12px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section.footer div.copy{
+    margin-top: 5em;
+}
+section.footer div.copy div.list{
+    margin-bottom: 2em;
+}
+section.footer div.copy div.list ul li{
+    display: inline;
+}
+
+section.footer div.copy div.list ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+}
+
+@media only screen and (max-width:768px){
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        height: 4em;
+        /* position: fixed; */
+        width: 100%;
+        z-index: 3;
+    }
+    nav p{
+        color: white;
+        display: contents;
+        font-size: 1.8em;
+    }
+    
+    nav div.name{
+        text-align: center;
+        color: white;
+    }
+    
+    nav div.list ul li{
+        display: none;
+        padding: 0 1.1em;
+        font-size: 18px;
+    }
+    
+    nav div.cont .cta-1{
+        display: none;
+    }  
+
+    section.hero-section{
+        position: relative;
+        /* top: 4em; */
+        /* background-color: black; */
+        color: white;
+        width: 170vw;
+        height: 65vh;
+    }
+    section.hero-section div.hero{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        /* margin: auto; */
+        /* margin-bottom: 6em; */
+    }
+    
+    section.hero-section div.hero div.article{
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.5em;
+        /* margin-right: 8px; */
+    }
+    section.hero-section div.hero div.article h2{
+        font-size: 1.5em;
+        line-height: 1.4em;
+    }
+    
+    section.hero-section div.hero div.article h3{
+        font-size: 1.7em;
+    }
+    section.hero-section div.hero div.article span{
+        font-style: italic;
+        font-size: 1.5em;
+        ;
+    }
+    section.hero-section div.hero div.one{
+        width: 40%;
+    }
+    
+    section.hero-section div.hero div.one img{
+        min-width: 40%;
+        height: 35vh;
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0em;
+        margin-bottom: 12px;
+        margin-top: 10px;
+       
+    }
+    /* header ends here */
+
+    section.main-1{
+        margin-top: 5em;
+        width: 160vw;
+    }
+    section.main-1 h1{
+        text-align: center;
+        font-size: 2.5em;
+        /* margin: 0.5em 0px; */
+    }
+    section.main-1 div.product{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        font-size: 1.8em;
+        gap: 1.5em;
+    }
+    
+    section.main-1 div.product div.product-1 p{
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 1.5em;
+        font-size: 1.1em;
+    }
+    
+    section.main-1 div.product div.product-1 a{
+        text-decoration: none;
+        color: grey;
+        font-size: 1em;
+        border-bottom: 2px solid blue;
+    }
+
+    section.main-1 div.product-2{
+        width: 150vw;
+        margin: 4em auto 0;
+        
+    }
+    section.main-1 div.product-2 div.align{
+        display: flex;
+        gap: 2em;  
+        margin: 0 0 2em 2em; 
+        width: 100%;
+    }
+
+    section.main-1 div.product-2 div.align h3{
+        font-size: 2em;
+    }
+    section.main-1 div.product-2 div.align h2{
+        font-size: 2em;
+    }
+    
+    section.main-1 div.two{
+        width: 100%;
+        margin: auto;
+    }
+    
+    section.main-1 div.two img{
+        width: 95%;
+        margin: auto;
+        height: 50vh;
+        margin-left: 30px;
+    }
+    
+    section.main-1 div.small-pro{
+        width: 100%;
+        margin: 0 auto 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        
+    }
+    
+    section.main-1 div.small-pro div.project{
+        min-width: 100vw;
+        /* height: 50vh; */
+        margin: 0;
+    }
+    
+    section.main-1 div.small-pro div.project img{
+        width: 100%;
+        margin: auto;
+    }
+    
+    
+    section.awesome{
+        width: 160vw;
+        margin: auto;
+    }
+    
+    section.awesome div.three{
+        width: 100%;
+        display: flex;
+    
+    }
+    
+    section.awesome div.three div.article{
+        width: 40%;
+        margin-left: 2em;
+    }
+    
+    section.awesome div.words{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        font-size: 16px;
+        text-align: justify;
+    }
+    
+    section.awesome div.three div.article h1{
+        font-size: 22px;
+        margin-top: 1em;
+    }
+    
+    section.awesome div.boxes{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 2em;
+    }
+    
+    section.awesome div.boxes div.box{
+        width: 100%;
+        margin: 0 0 0 15px;
+        border: 2px solid black;
+        padding: 10px;
+        height: 20vh;
+    }
+    
+    section.awesome div.boxes div.box:hover{
+        background-color: rgb(54, 44, 44);
+        color: white;
+        transition: 1s ease-in-out;
+    }
+
+    section.footer{
+        width: 170vw;
+        color: white;
+        background-color: black;
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 55vh;
+    }
+    section.footer div.footer-1{
+        margin-top: 2em;
+        width: 80%;
+        text-align: center;
+    }
+    
+    section.footer div.footer-1 h1{
+        margin-bottom: 0.8em;
+    }
+    
+    section.footer div.footer-1 p{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    section.footer div.footer-1 input[type="email"] {
+        width: 20em;
+        padding: 12px;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    section.footer div.footer-1 .cta-2 {
+        background-color: red;
+        padding: 12px;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    section.footer div.copy{
+        margin-top: 5em;
+    }
+    section.footer div.copy div.list{
+        margin-bottom: 2em;
+    }
+    section.footer div.copy div.list ul li{
+        display: inline;
+    }
+    
+    section.footer div.copy div.list ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 1.5em;
+        text-align: center;
+    }
+    
+}
